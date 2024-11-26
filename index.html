@@ -9,14 +9,11 @@
     body {
       background: linear-gradient(to bottom, #5ADFC6, #3E87F3);
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       color: #333;
     }
 
@@ -97,30 +94,9 @@
       transition: background 0.3s;
     }
 
-    .dialog-button:hover {
-      background: #0056b3;
-    }
+    
 
-    .price-info {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #333;
-    }
-
-    .buy-button {
-      padding: 10px 20px;
-      background: #28a745;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
+    .
     .buy-button:hover {
       background: #218838;
     }
@@ -129,13 +105,34 @@
       background: #21222B;
       border-radius: 8px;
       margin-bottom: 10px;
-      width: 100px;
+      width: 130px;
       padding: 20px;
+    }
+    
+    #bt:hover {
+      transform: scale(1.05);
+    }
+    
+    #bt {
+      background: #5663F9;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 30px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    #mb {
+      display: flex;
+      gap: 10px
     }
   </style>
 </head>
 
 <body>
+  
+ 
 
   <h1>SEJA BEM VINDO AO BOT 100X - COM 99% DE ASSERTIVIDADE</h1>
   <h2 style="color: white; font-weight: bold; font-size: 15px">ESCOLHA O SEU PAÍS PARA JOGAR AVIATOR COM O BOT 100X</h2>
@@ -146,8 +143,10 @@
     <center><h style="color: white">BOT 100X MOZ</h></center>
   </div>
   <div id="pa">
-   <img class="country-img" id="ango" onclick="ango()" src="angoa.jpeg" alt="BOT HUNTER ANGOLA"> 
-    <center><h style="color: white">BOT 100X INTERNACIONAL</h></center>
+    <img class="country-img" id="ango" onclick="inter()" src="inter.jpeg" alt="BOT HUNTER INTERNACIONAL">
+    <h4 style="color: white">BOT INTERNACIONAL</h4>
+  </div>
+  
   </div>
 
  
@@ -160,6 +159,15 @@
       <button class="dialog-button" id="okBtn">OK</button>
     </div>
   </div>
+  
+  <div id="mb">
+    
+    <button onclick="btn()" id="bt">MANUAL DO BOT</button>
+  
+  <button onclick="bx()" id="bt" style="background: black">BAIXAR APLICATIVO</button>
+  </div>
+ 
+  
 
   <script>
     const veri = "esa"; // Aqui deve estar a lógica correta para a verificação
@@ -189,9 +197,21 @@
       window.location.href = "ango.html";
     }
     
+    function btn() {
+      window.location.href = "manua.html"
+    }
+    
+    function bx() {
+      window.open("https://www.mediafire.com/file/jy0ebcnso1t7yks/BOT_100X_1.apk/file")
+    }
+    
+    function inter() {
+      window.location.href = "cas.html"
+    }
     
   </script>
 
 </body>
 
-</html>
+  </html>
+  
